@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+int rno;
+char name[10];
+int marks,age;
+};
+void main()
+{
+//assigning values to structure variable s1 using initialization
+struct student s1={2,"Gandhi",89,18};
+struct student s2,s3;
+//assigning values to s2 using assignment operator.
+s2.rno=5;
+s2.marks=90;
+s2.age=18;
+strcpy(s2.name,"Ram ");
+//reading values for s3 using standard input function.
+printf("\n enter rno,name ,marks,age of student: ");
+scanf("%d%s%d%d",&s3.rno,s3.name,&s3.marks,&s3.age);
+printf("\n\n");
+printf("Details of student 1:\n");
+printf("\n roll number: %d",s1.rno);
+printf("\n name :%s",s1.name);
+printf("\n marks: %d",s1.marks);
+printf("\n age: %d",s1.age);
+printf("\n\n");
+printf("Details of student 2:\n");
+printf("\n roll number: %d",s2.rno);
+printf("\n name :%s",s2.name);
+printf("\n marks: %d",s2.marks);
+printf("\n age: %d",s2.age);
+printf("\n\n");
+printf("Details of student 3:\n");
+printf("\n roll number: %d",s3.rno);
+printf("\n name :%s",s3.name);
+printf("\n marks: %d",s3.marks);
+printf("\n age: %d",s3.age);
+}
+
