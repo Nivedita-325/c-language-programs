@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+struct student
+{
+int rno;
+char name[10];
+int marks,age;
+};
+void main()
+{
+struct student s[10];//Declares array of 10 student.
+int i,n;
+printf("\n enter number of students: ");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+//reading values for s3 using standard input function.
+printf("\n enter rno,name ,marks,age of student %d: ",i+1);
+scanf("%d%s%d%d",&s[i].rno,s[i].name,&s[i].marks,&s[i].age);
+}
+printf("\n\n");
+printf("Details of students are :\n");
+for(i=0;i<n;i++)
+{
+printf("\n Details of student %d:\n",i+1);
+printf("\n roll number: %d",s[i].rno);
+printf("\n name :%s",s[i].name);
+printf("\n marks: %d",s[i].marks);
+printf("\n age: %d",s[i].age);
+}
+}
